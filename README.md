@@ -1,4 +1,4 @@
-# Ciência Da Computação - [UNIFEG](https://www.unifeg.edu.br/webacademico/site/descricaocurso.jsp?codigocurso=101)
+# [Ciência Da Computação - UNIFEG](https://www.unifeg.edu.br/webacademico/site/descricaocurso.jsp?codigocurso=101)
 
 Duração do Curso: *8 semestres*.
 
