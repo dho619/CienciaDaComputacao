@@ -4,13 +4,16 @@
 	font-family: 'FonteLogo';
 	src: url("../_fonts/bubblegum-sans-regular.otf");
 }
+/*SITE: https://www.smartia.com.br/blog/lancamentos-carros-2019/ */
 
+/*Corpo da pagina */
 body {
 	font-family: Arial, sans-serif;
 	background-color: #dddddd;
         background-image: url("../img/fundoSite.jpg");
 }
 
+/*Div principal */
 div#interface {
 	width: 1280px;
 	background-color: #ffffff;
@@ -26,6 +29,8 @@ div#interface h1 {
     text-align: center;
 }
 
+
+/*Cabecalho da pagina */
 header#cabecalho img#icone{
 	position: absolute;
 	right: 13px;
@@ -92,6 +97,8 @@ header#cabecalho a#home:hover {
     -webkit-transition: all .3s ease-in;
 }
 
+
+/*Navegador de paginas */
 nav#menu {
 	display: block;
 }
@@ -131,18 +138,27 @@ nav#menu li:hover a{
         -webkit-transition: all .3s ease-in;
 }
 
+/* Controle do corpo lateral e principal*/
+
 aside#lateral {
 	display: block;
-	width: 400px;
+	width: 250px;
 	float: right;
 	padding: 10px;
 	margin-top: 10px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
+aside#lateral h3 {
+    color: #ffffff;
+    font-family: 'FonteLogo', sans-serif;
+    text-transform: inherit;
+}
+
+/*Corpo da pagina */
 section#corpo {
 	display: block;
-	width: 800px;
+	width: 950px;
 	float: left;
 	border-right: 2px solid gray;
 	padding-right: 17px;
@@ -194,30 +210,15 @@ article#principal a {
     color: white;
 }
 
-footer#rodape {
-	clear: both;
-	border-top: 2px solid gray;
-}
 
-footer#rodape p {
-	text-align: center;
-        font-size: 9pt;
-        color: white;
-        font-family: sans-serif;
-}
-
-footer#rodape a#link {
-    color: red;
-}
-
-
+/*Configuração das imagens pagina */
 
 .card {
   width: 90%;
   max-width: 100%;
   margin: 0 0 4rem;
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.25);
-  background-color: #d5bee8;
+  background-color: #ccccff;
 }
 .card .wrap-image {
   position: relative;
@@ -235,8 +236,8 @@ footer#rodape a#link {
 }
 .card .wrap-image svg polygon,
 .card .wrap-image svg path {
-  fill: #d5bee8;
-  stroke: #d5bee8;
+  fill: #ccccff;
+  stroke: #ccccff;
 }
 .card:nth-child(4) .wrap-image svg path {
   stroke-width: 3px;
@@ -253,10 +254,13 @@ footer#rodape a#link {
 .card .contents h3 {
   margin: 0 0 0.5rem;
   font-size: 1.125em;
-  color: #fff;
+  color: red;
+}
+.card .contents a{
+    color: #cc0000;
 }
 .card .contents .text {
-  color: rgba(0, 0, 0, 0.5);
+    color: #3300cc;
   line-height: 1.6;
   font-size: 0.9em;
 }
@@ -272,4 +276,26 @@ footer#rodape a#link {
     width: 100%;
     margin-bottom: 3rem;
   }
+}
+
+/*Rodape da pagina */
+
+footer#rodape {
+	clear: both;
+	border-top: 2px solid gray;
+}
+
+footer#rodape a#link {
+    color: red;
+}
+
+footer#rodape a#link:hover {
+    color: blue;
+}
+
+footer#rodape p {
+	text-align: center;
+        font-size: 9pt;
+        color: white;
+        font-family: sans-serif;
 }
