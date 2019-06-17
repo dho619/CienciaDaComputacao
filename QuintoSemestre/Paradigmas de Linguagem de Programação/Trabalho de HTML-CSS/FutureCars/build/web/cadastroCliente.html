@@ -10,15 +10,18 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script/autenticarCadastro.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="css/autenticar.css">
     </head>
     <body>
-        <div>Cadastro de Clientes</div>
+        <div><h1>Cadastro de Clientes</h1></div>
+        <br/>
+        <br/>
         <form name="form1" action="apresenta-cliente.jsp" method="post">
-            <div> Nome: <input type="text" name="nome" value=""> </div>
-            <div> Email: <input type="email" name="email" value=""></div>
-            <div> CPF: <input type="text" name="cpf" value=""></div>
-            <div> Senha: <input type="password" id="senha" name="senha"/> </div>
-            <div><input type="submit" name="submit" value="Cadastrar" onclick="return submit_client()"></div>
+            <div><pre>Nome:   <input type="text" name="nome" value=""></pre> </div>
+            <div><pre>Email:  <input type="email" name="email" value=""></pre></div>
+            <div><pre>CPF:    <input type="text" name="cpf" value=""></pre></div>
+            <div><pre>Senha:  <input type="password" id="senha" name="senha"/></pre> </div>
+            <div class="botao"><input type="submit" name="submit" value="Cadastrar" onclick="return submit_client()"></div>
         </form>
     </body>
 </html>

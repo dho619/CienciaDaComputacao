@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body{
+    background-color: #ccccff;
+}
+h1{
+    font-family: "FonteLogo", sans-serif;
+    font-size: 20pt;
+    color: red;
+    webkit-text-stroke: 1px black;
+    text-shadow: 10px 10px 10px rgba(0,0,0,.9);
+    padding: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.botao{
+    text-align: center;
+}

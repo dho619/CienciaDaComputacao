@@ -12,7 +12,7 @@
         <title>Apresentação</title>
     </head>
     <body>
-        <h1>Olá <%=request.getParameter("nome")%>!</h1>
+        <h1>Olá <%=request.getParameter("nome")%> seja bem vindo!</h1>
         <h2>Seu email é <%=request.getParameter("email")%>.</h2>
     </body>
 </html>
