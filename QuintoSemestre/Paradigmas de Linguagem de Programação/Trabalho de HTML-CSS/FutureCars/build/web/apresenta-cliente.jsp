@@ -9,10 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/autenticar.css">
         <title>Apresentação</title>
     </head>
     <body>
         <h1>Olá <%=request.getParameter("nome")%> seja bem vindo!</h1>
-        <h2>Seu email é <%=request.getParameter("email")%>.</h2>
+        <br/>
+        <h2>Seu cpf é <%=request.getParameter("cpf")%> e o mesmo será usado para seu login.</h2>
     </body>
 </html>
