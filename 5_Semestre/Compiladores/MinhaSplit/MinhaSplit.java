@@ -40,7 +40,7 @@ class MySplit {
       }
     }
 
-    //Convertendo o ArrayList, para uma lisa de String
+    //Convertendo o ArrayList, para uma lista de String
     String result[] = new String[lista.size()];
     for (int i = 0; i<lista.size(); i++){
       result[i] = ""+lista.get(i); 
