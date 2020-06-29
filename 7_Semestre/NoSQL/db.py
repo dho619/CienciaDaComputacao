@@ -21,6 +21,7 @@ class Categorys(Base):
     __tablename__ = 'categorys'
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     description = sqlalchemy.Column(sqlalchemy.String(length=100), unique=True)
+    products = sqlalchemy.orm.relationship("Products",  back_populates='category')
 
     def __repr__(self):
         return "<Categorys(description='{0}'>".format(self.description)
@@ -49,6 +50,8 @@ class Products(Base):
     reviews = sqlalchemy.Column(sqlalchemy.Integer)
     style_attributes = sqlalchemy.Column(sqlalchemy.String(length=3000))
     color = sqlalchemy.Column(sqlalchemy.String(length=50))
+    category_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey('categorys.id'))
+    category = sqlalchemy.orm.relationship("Categorys", back_populates='products')
     sizes = sqlalchemy.orm.relationship("Sizes", secondary=products_sizes, back_populates='products')
 
 

@@ -23,6 +23,7 @@ for category in categorys:
     session.add(newCategory)
     session.commit()
 
+
 for size in sizes:
     newSize = Sizes(description=size[:100])
     session.add(newSize)
@@ -33,7 +34,9 @@ for registro in planilha.itertuples():
                            brand_name = registro.brand_name[:100] , description = registro.description[:3000] , rating = registro.rating ,
                            reviews = registro.review_count , style_attributes = registro.style_attributes[:3000] , color = registro.color[:50]
                          )
-
+    category = session.query(Categorys).filter_by(description=registro.product_category).first()
+    newProduct.category = category
+    print(category.description)
     for sizeProd in str(registro.available_size).split(','):
         size = session.query(Sizes).filter_by(description=sizeProd.lstrip()).first()
         if size:
